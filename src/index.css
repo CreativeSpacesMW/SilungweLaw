@@ -6,16 +6,17 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", serif;
   
-  --color-ritz-blue: #0F172A;
-  --color-ritz-gold: #C5A059;
+  --color-slc-gold: #D4AF37;
+  --color-slc-dark: #0F172A;
+  --color-cream: #FDFBF7;
 }
 
 body {
   font-family: var(--font-sans);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-  background-color: #f8fafc; /* slate-50 */
-  color: #0f172a; /* slate-900 */
+  background-color: var(--color-cream);
+  color: var(--color-slc-dark);
   overflow-x: hidden;
   height: 100%;
   width: 100%;
@@ -35,6 +36,6 @@ h1, h2, h3, .font-serif {
 }
 
 ::selection {
-  background-color: var(--color-ritz-gold);
-  color: var(--color-ritz-blue);
+  background-color: var(--color-slc-gold);
+  color: white;
 }

@@ -6,62 +6,38 @@ import { Link } from 'react-router-dom';
 const teamData = {
   partners: [
     {
-      name: "Lusungu Gondwe",
-      role: "Founder & Managing Partner",
-      specialization: "Banking, Fintech & Trade Finance",
-      bio: "Lusungu is the driving force behind the firm’s multidisciplinary vision. He handles 68% of the Malawian banking market’s trade finance portfolio and is a pioneer in Fintech regulation in the region.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["Fintech", "Trade Finance", "Banking Law"]
+      name: "[Managing Partner Name]",
+      role: "Managing Partner",
+      specialization: "Corporate Strategy & Consultancy",
+      bio: "Our Managing Partner leads the firm's strategic vision, bringing authoritative market experience to every consultancy project and complex legal matter.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600&h=800",
+      expertise: ["Strategy", "Corporate Law", "Leadership"]
     },
     {
-      name: "Chifundo Ngwira",
-      role: "Senior Partner",
-      specialization: "Compliance & Institutional Audit",
-      bio: "With over 25 years of experience, Chifundo leads the firm's Legal Compliance Audit Services (LCAS). She specializes in ensuring corporate robustness for international conglomerates operating in Malawi.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["Corporate Governance", "Compliance", "Employment Law"]
-    },
-    {
-      name: "Lozindaba Mbvundula",
-      role: "Partner",
-      specialization: "WTO, Competition & Property",
-      bio: "Lozindaba bridges domestic property acquisition with international trade regulations. She is a leading expert on WTO frameworks and Competition Law in Southern Africa.",
-      image: "https://images.unsplash.com/photo-1580894732230-28e193399e82?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["International Trade", "Competition Law", "Conveyancing"]
+      name: "[Senior Consultant Name]",
+      role: "Senior Consultant",
+      specialization: "Institutional Advisory",
+      bio: "Expert consultant with a focus on institutional auditing and regulatory compliance, ensuring operational excellence for all our clients.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=600&h=800",
+      expertise: ["Advisory", "Compliance", "Auditing"]
     }
   ],
   associates: [
     {
-      name: "Belinda Msungama",
-      role: "Senior Associate",
-      specialization: "Corporate & Commercial",
-      bio: "Dual-qualified practitioner (Malawi and New York). Belinda specializes in cross-border M&A and tech investment.",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["M&A", "Investment Law"]
-    },
-    {
-      name: "Kondwani Mtonga",
-      role: "Senior Associate",
-      specialization: "Litigation & Dispute Resolution",
-      bio: "A high-velocity litigator known for handling complex civil and commercial disputes in the High Court.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["Litigation", "Arbitration"]
-    },
-    {
-      name: "Memory Ngosi",
+      name: "[Associate Name]",
       role: "Associate",
-      specialization: "Intellectual Property & TMT",
-      bio: "Specializes in the protection of digital assets and telecommunications regulatory frameworks.",
-      image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["IP Protection", "Telecoms"]
+      specialization: "Legal Research & Commercial Advisory",
+      bio: "Dedicated associate handling complex legal research and commercial contracts for our diverse client base.",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600&h=800",
+      expertise: ["Research", "Contracts"]
     },
     {
-      name: "Tiwonge Mhone",
-      role: "Associate",
-      specialization: "Energy & Mining",
-      bio: "Advising on oil and gas regulations and emerging carbon credit trading frameworks.",
-      image: "https://images.unsplash.com/photo-1594744803329-a584af1cae24?auto=format&fit=crop&q=80&w=600&h=800",
-      expertise: ["Energy Law", "ESG"]
+      name: "[Support Staff Name]",
+      role: "Support Staff",
+      specialization: "Operations & Administration",
+      bio: "Essential personnel managing the daily operations and administrative excellence of Silungwe Law Consultants.",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600&h=800",
+      expertise: ["Operations", "Admin"]
     }
   ]
 };
@@ -82,7 +58,7 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isPartner = false }) => {
   return (
-    <div className={`group bg-white rounded-sm overflow-hidden transition-all duration-700 hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)] ${isPartner ? 'md:flex border-b-4 border-ritz-gold' : 'border border-slate-100'}`}>
+    <div className={`group bg-white rounded-sm overflow-hidden transition-all duration-700 hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)] ${isPartner ? 'md:flex border-b-4 border-slc-gold' : 'border border-slate-100'}`}>
       <div className={`relative overflow-hidden bg-slate-900 ${isPartner ? 'md:w-[40%] aspect-[4/5] md:aspect-auto' : 'aspect-[4/5]'}`}>
         <img 
           src={member.image} 
@@ -91,23 +67,23 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isPartner = fal
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity"></div>
         <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex space-x-2 md:space-x-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-           <a href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center text-slate-950 hover:bg-ritz-gold hover:text-white transition-colors">
+           <a href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center text-slate-950 hover:bg-slc-gold hover:text-white transition-colors">
             <Linkedin size={14} />
            </a>
-           <a href={`mailto:info@ritzattorneys.com`} className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center text-slate-950 hover:bg-ritz-gold hover:text-white transition-colors">
+           <a href={`mailto:info@silungwelaw.com`} className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center text-slate-950 hover:bg-slc-gold hover:text-white transition-colors">
             <Mail size={14} />
            </a>
         </div>
       </div>
       
-      <div className={`p-6 md:p-10 lg:p-14 ${isPartner ? 'md:w-[60%] flex flex-col justify-center bg-slate-50' : 'bg-white'}`}>
+      <div className={`p-6 md:p-10 lg:p-14 ${isPartner ? 'md:w-[60%] flex flex-col justify-center bg-cream' : 'bg-white'}`}>
         <div className="mb-6 md:mb-8">
-           <div className="text-ritz-gold text-[9px] font-black uppercase tracking-[0.4em] mb-2 md:mb-4">{member.role}</div>
-          <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-slate-950 mb-1 leading-tight tracking-tighter group-hover:text-ritz-gold transition-colors">{member.name}</h3>
+           <div className="text-slc-gold text-[9px] font-black uppercase tracking-[0.4em] mb-2 md:mb-4">{member.role}</div>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slc-dark mb-1 leading-tight tracking-tighter group-hover:text-slc-gold transition-colors font-serif">{member.name}</h3>
         </div>
         
-        <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-8 font-light">
-          {member.bio}
+        <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-8 font-light italic">
+          "{member.bio}"
         </p>
         
         <div className="flex flex-wrap gap-2 md:gap-3 mt-auto">
@@ -124,22 +100,22 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isPartner = fal
 
 const Team: React.FC = () => {
   return (
-    <div className="bg-white pb-20 md:pb-32">
+    <div className="bg-white pb-20 md:pb-32 pt-24">
       {/* Hero Header */}
-      <section className="bg-slate-950 text-white py-24 md:py-48 relative overflow-hidden">
+      <section className="bg-slc-dark text-white py-24 md:py-48 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <div className="absolute top-0 right-0 w-2/3 h-full bg-ritz-gold transform skew-x-12"></div>
+          <div className="absolute top-0 right-0 w-2/3 h-full bg-slc-gold transform skew-x-12"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-            <div className="inline-flex items-center space-x-2 bg-ritz-gold/10 border border-ritz-gold/30 px-4 py-2 rounded-full mb-8 backdrop-blur-sm mx-auto">
-              <Users size={14} className="text-ritz-gold" />
-              <span className="text-ritz-gold text-[9px] font-black uppercase tracking-[0.4em]">Global Talent Pool</span>
+            <div className="inline-flex items-center space-x-2 bg-slc-gold/10 border border-slc-gold/30 px-4 py-2 rounded-full mb-8 backdrop-blur-sm mx-auto">
+              <Users size={14} className="text-slc-gold" />
+              <span className="text-slc-gold text-[9px] font-black uppercase tracking-[0.4em]">Expert Personnel</span>
             </div>
             <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[0.95] tracking-tighter">
-              The <span className="text-ritz-gold italic font-serif font-light">Human</span> <br />Infrastructure.
+              Expert <span className="text-slc-gold italic font-serif font-light">Human</span> <br />Capital.
             </h1>
             <p className="text-lg md:text-2xl text-slate-400 font-light leading-relaxed max-w-2xl mx-auto font-serif italic">
-              "A multidisciplinary engine of legal architects, dual-qualified experts, and technical innovators."
+              "A multidisciplinary team of consultants and legal experts dedicated to your success."
             </p>
         </div>
       </section>
@@ -147,7 +123,7 @@ const Team: React.FC = () => {
       {/* Leadership Partners */}
       <section className="py-20 md:py-32 container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-20 gap-4">
-          <h2 className="text-3xl md:text-6xl font-bold text-slate-950 tracking-tighter">Leadership Partners</h2>
+          <h2 className="text-3xl md:text-6xl font-bold text-slc-dark tracking-tighter font-serif">Leadership</h2>
           <p className="text-slate-400 text-[9px] font-black uppercase tracking-[0.3em] pb-1">Strategic Governance</p>
         </div>
         <div className="space-y-16 md:space-y-32">
@@ -161,8 +137,8 @@ const Team: React.FC = () => {
       <section className="py-20 md:py-32 bg-slate-50 border-y border-slate-100">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-20 gap-4">
-            <h2 className="text-3xl md:text-6xl font-bold text-slate-950 tracking-tighter">Expert Practitioners</h2>
-            <p className="text-ritz-gold text-[9px] font-black uppercase tracking-[0.3em] pb-1">Technical Execution</p>
+            <h2 className="text-3xl md:text-6xl font-bold text-slc-dark tracking-tighter font-serif">Consultants & Staff</h2>
+            <p className="text-slc-gold text-[9px] font-black uppercase tracking-[0.3em] pb-1">Operational Excellence</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {teamData.associates.map((associate, idx) => (
@@ -174,26 +150,26 @@ const Team: React.FC = () => {
 
       {/* Deep Bench Stats */}
       <section className="py-20 md:py-32 container mx-auto px-4">
-        <div className="bg-slate-950 p-10 md:p-32 text-center relative overflow-hidden rounded-sm group">
-           <div className="absolute top-0 left-0 w-full h-1 bg-ritz-gold"></div>
+        <div className="bg-slc-dark p-10 md:p-32 text-center relative overflow-hidden rounded-sm group">
+           <div className="absolute top-0 left-0 w-full h-1 bg-slc-gold"></div>
            <div className="max-w-4xl mx-auto relative z-10">
-             <h3 className="text-2xl md:text-5xl font-bold text-white mb-12 md:mb-16 tracking-tighter">A "Deep Bench" of Multi-jurisdictional Talent.</h3>
+             <h3 className="text-2xl md:text-5xl font-bold text-white mb-12 md:mb-16 tracking-tighter">A New Authority in the Market.</h3>
              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                {[
-                 { val: "15+", label: "Attorneys" },
-                 { val: "3", label: "Dual-Qualified" },
-                 { val: "100%", label: "Digital Fluency" },
-                 { val: "6", label: "Practice Heads" }
+                 { val: "Fresh", label: "Market Entry" },
+                 { val: "Expert", label: "Consultants" },
+                 { val: "SLC", label: "Firm Hub" },
+                 { val: "68+", label: "Focus Areas" }
                ].map((stat, i) => (
                  <div key={i} className="text-center">
-                   <div className="text-ritz-gold text-3xl md:text-6xl font-serif font-bold mb-1">{stat.val}</div>
+                   <div className="text-slc-gold text-3xl md:text-6xl font-serif font-bold mb-1">{stat.val}</div>
                    <p className="text-slate-500 text-[8px] md:text-[10px] uppercase font-black tracking-[0.3em]">{stat.label}</p>
                  </div>
                ))}
              </div>
              <div className="mt-16">
-               <Link to="/contact" className="bg-white text-slate-950 px-8 py-5 text-[10px] font-black uppercase tracking-[0.2em] rounded-sm hover:bg-ritz-gold transition-colors inline-block">
-                 Join Our Technical Team
+               <Link to="/contact" className="bg-white text-slc-dark px-8 py-5 text-[10px] font-black uppercase tracking-[0.2em] rounded-sm hover:bg-slc-gold hover:text-white transition-colors inline-block">
+                 Request Partnership
                </Link>
              </div>
            </div>

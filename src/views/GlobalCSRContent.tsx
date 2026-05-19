@@ -4,41 +4,41 @@ import { Globe, Heart, BookOpen, Leaf } from 'lucide-react';
 
 const GlobalCSR: React.FC = () => {
   return (
-    <div className="bg-white">
-      {/* Global Reach */}
-      <section className="py-24 bg-ritz-blue text-white overflow-hidden relative">
+    <div className="bg-white pt-24">
+      {/* Global Vision */}
+      <section className="py-24 bg-slc-dark text-white overflow-hidden relative">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:row items-center gap-16">
+          <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="md:w-1/2">
-              <h1 className="text-5xl font-bold mb-8">Alliott Global Alliance</h1>
+              <h1 className="text-5xl font-bold mb-8 font-serif">Global Advisory</h1>
               <p className="text-xl text-slate-300 font-light leading-relaxed mb-8">
-                As the exclusive Malawian member of the <span className="text-ritz-gold font-semibold">Alliott Global Alliance (AGA)</span>, Ritz provides a seamless gateway for international investors entering the Southern African market.
+                Silungwe Law Consultants provides a seamless gateway for international investors entering the <span className="text-slc-gold font-semibold uppercase tracking-widest">Malawian</span> market. Our advisory services are built on global standards of excellence.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-ritz-gold/20 p-2 rounded">
-                    <Globe size={20} className="text-ritz-gold" />
+                  <div className="bg-slc-gold/20 p-2 rounded">
+                    <Globe size={20} className="text-slc-gold" />
                   </div>
                   <div>
-                    <h4 className="font-bold">100+ Countries</h4>
-                    <p className="text-sm text-slate-400">Collaborating with elite legal and accounting firms globally.</p>
+                    <h4 className="font-bold">Regional Reach</h4>
+                    <p className="text-sm text-slate-400 uppercase tracking-tighter">Collaborating with elite consultancy networks across the SADC region.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-ritz-gold/20 p-2 rounded">
-                    <Globe size={20} className="text-ritz-gold" />
+                  <div className="bg-slc-gold/20 p-2 rounded">
+                    <Globe size={20} className="text-slc-gold" />
                   </div>
                   <div>
-                    <h4 className="font-bold">Direct Corridors</h4>
-                    <p className="text-sm text-slate-400">Specialized desks for investors from the UK, USA, China, and UAE.</p>
+                    <h4 className="font-bold">Strategic Passages</h4>
+                    <p className="text-sm text-slate-400 uppercase tracking-tighter">Facilitating smooth market entry for foreign capital and multinational operations.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2">
               <div className="relative">
-                <div className="absolute -inset-4 bg-ritz-gold/20 rounded-full blur-3xl"></div>
-                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&q=80&w=800" className="relative z-10 rounded-lg shadow-2xl opacity-80" alt="Global Network" />
+                <div className="absolute -inset-4 bg-slc-gold/20 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&q=80&w=800" className="relative z-10 rounded-lg shadow-2xl opacity-80 backdrop-blur-sm grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Global Network" />
               </div>
             </div>
           </div>
@@ -46,33 +46,33 @@ const GlobalCSR: React.FC = () => {
       </section>
 
       {/* CSR Pillars */}
-      <section className="py-24">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Corporate Responsibility</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Our commitment to Malawi extends beyond the boardroom through strategic social interventions.</p>
+            <h2 className="text-4xl font-bold mb-4 text-slc-dark font-serif">Social Responsibility</h2>
+            <p className="text-slate-500 max-w-2xl mx-auto">Our commitment to Malawi's progress is reflected in our strategic community contributions.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 border border-slate-100 hover:border-ritz-gold transition-colors text-center">
-              <BookOpen size={48} className="text-ritz-gold mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Education</h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Through our partnership with <span className="font-bold">MUBAS</span>, we sponsor legal academic excellence and provide internship pathways for Malawi's next generation of legal architects.
+            <div className="p-8 bg-white border border-slate-100 hover:border-slc-gold transition-colors text-center shadow-xl">
+              <BookOpen size={48} className="text-slc-gold mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 font-serif">Knowledge</h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                We believe in empowering the next generation of Malawian consultants through mentorship and knowledge transfer initiatives.
               </p>
             </div>
-            <div className="p-8 border border-slate-100 hover:border-ritz-gold transition-colors text-center">
-              <Heart size={48} className="text-ritz-gold mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Healthcare</h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Active support for primary healthcare facilities and medical outreach programs in the Southern Region of Malawi.
+            <div className="p-8 bg-white border border-slate-100 hover:border-slc-gold transition-colors text-center shadow-xl">
+              <Heart size={48} className="text-slc-gold mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 font-serif">Community</h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                Supporting local healthcare and social welfare programs in the Central Region of Malawi to foster communal growth.
               </p>
             </div>
-            <div className="p-8 border border-slate-100 hover:border-ritz-gold transition-colors text-center">
-              <Leaf size={48} className="text-ritz-gold mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Environment</h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Committing a percentage of our carbon credit legal advisory profits to local reforestation and environmental conservation initiatives.
+            <div className="p-8 bg-white border border-slate-100 hover:border-slc-gold transition-colors text-center shadow-xl">
+              <Leaf size={48} className="text-slc-gold mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 font-serif">Sustainability</h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                Advocating for sustainable business practices and environmental stewardship across our consultancy projects.
               </p>
             </div>
           </div>

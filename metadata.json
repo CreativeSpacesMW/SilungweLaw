@@ -1,7 +1,10 @@
 {
-  "name": "Ritz Attorneys at Law",
-  "description": "The official digital platform for Malawi's largest law firm, specializing in the confluence of law, technology, and finance.",
+  "name": "Silungwe Law Consultants",
+  "description": "Premium consultancy and legal services in Lilongwe, Malawi. Expert legal consultants for modern business needs.",
   "requestFramePermissions": [
     "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]
 }
