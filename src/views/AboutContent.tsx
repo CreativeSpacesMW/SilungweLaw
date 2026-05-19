@@ -1,9 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Award, Landmark, ChevronRight } from 'lucide-react';
 
 const About: React.FC = () => {
+  useEffect(() => {
+    document.title = "Our Genesis & Expertise | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about Silungwe Law Consultants, a modern vanguard of Malawian legal consultancy based in Lilongwe. Our multidisciplinary team ensures structural excellence.');
+    }
+  }, []);
+
   return (
     <div className="bg-white pt-24">
       {/* Institutional Architecture */}

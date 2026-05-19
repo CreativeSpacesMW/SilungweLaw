@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Mail, Linkedin, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -62,7 +62,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isPartner = fal
       <div className={`relative overflow-hidden bg-slate-900 ${isPartner ? 'md:w-[40%] aspect-[4/5] md:aspect-auto' : 'aspect-[4/5]'}`}>
         <img 
           src={member.image} 
-          alt={member.name} 
+          alt={`Silungwe Law Consultant - ${member.name}, ${member.role}`} 
           className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" 
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity"></div>
@@ -99,6 +99,14 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isPartner = fal
 };
 
 const Team: React.FC = () => {
+  useEffect(() => {
+    document.title = "Expert Consultants & Legal Professionals | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Meet the expert team of consultants and legal professionals at Silungwe Law Consultants. A multidisciplinary team dedicated to your market success.');
+    }
+  }, []);
+
   return (
     <div className="bg-white pb-20 md:pb-32 pt-24">
       {/* Hero Header */}

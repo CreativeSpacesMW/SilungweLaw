@@ -1,9 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Scale, Zap, TrendingUp, Building, ArrowDown } from 'lucide-react';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = "Expert Legal Advisory | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Discover premium legal consultancy services in Lilongwe, Malawi. Silungwe Law Consultants provides expert advisory for modern business and corporate needs.');
+    }
+  }, []);
+
   return (
     <div className="overflow-hidden bg-white">
       {/* Hero Section - Executive Visuals */}
@@ -94,7 +102,7 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 w-full">
               <div className="relative group">
                 <div className="absolute inset-0 bg-slc-gold transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" className="w-full h-[400px] md:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Modern Architecture" />
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" className="w-full h-[400px] md:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Silungwe Law Consultants - Modern Architecture and Legal Genesis in Lilongwe" />
                 <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 bg-slate-950 text-white p-6 md:p-10 shadow-2xl">
                    <Building size={32} className="text-slc-gold mb-4 md:mb-6" />
                    <h4 className="text-xl md:text-2xl font-bold mb-1">Lilongwe HQ</h4>

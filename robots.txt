@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ritzattorneys.com/sitemap.xml
+Sitemap: https://www.silungwelaw.com/sitemap.xml

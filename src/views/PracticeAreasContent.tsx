@@ -1,9 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Landmark, Zap, Code, ShieldCheck, Globe, Building2, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const PracticeAreas: React.FC = () => {
+  useEffect(() => {
+    document.title = "Consultancy Services & Strategy | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Explore our legal consultancy domains including corporate law, commercial data innovation, and private client protection in Malawi.');
+    }
+  }, []);
+
   const areas = [
     {
       title: "Corporate Consultancy",

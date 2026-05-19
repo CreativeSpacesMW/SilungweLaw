@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, Laptop } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -13,6 +13,14 @@ const slcMarkerIcon = L.icon({
 });
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+    document.title = "Schedule a Briefing | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Contact Silungwe Law Consultants in Lilongwe for premium legal consultancy. Schedule a digital consultation or visit our headquarters today.');
+    }
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

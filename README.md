@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Silungwe Law Consultants
 
-# Run and deploy your AI Studio app
+## About
+Silungwe Law Consultants is a modern, reactive web platform designed for a premier legal consultancy firm based in Lilongwe, Malawi. This application serves as a digital gateway to high-end legal advisory services, combining structural excellence with technological innovation.
 
-This contains everything you need to run your app locally.
+## Technical Context & Rebranding
+This project represents a strategic rebranding effort, transitioning from the former "Ritz Attorneys at Law" identity to **Silungwe Law Consultants**. All assets, content, and design elements have been meticulously updated to reflect the new brand's vision of being a modern vanguard in the Malawian legal market.
 
-View your app in AI Studio: https://ai.studio/apps/8bf16a5e-2c0e-4c5e-95e6-3236e0e72a0d
+## Tech Stack
+- **Frontend Framework:** React 19 (via Vite)
+- **Styling:** Tailwind CSS 4 with custom design recipes
+- **Animations:** Motion (motion/react) for smooth, high-end transitions
+- **Icons:** Lucide React for consistent visual language
+- **Routing:** React Router DOM (HashRouter for compatibility)
+- **Maps:** React Leaflet for institutional location mapping
+- **Language:** TypeScript for robust, type-safe development
 
-## Run Locally
+## Key Features
+- **Modern Aesthetic:** A sharp, authoritative design defaulting to a sophisticated **cream white and deep green** palette with gold accents.
+- **Responsive Architecture:** Fully mobile-first design ensuring excellence across all device formats.
+- **Multidisciplinary Content:** Specialized sections for Corporate Strategy, Institutional Advisory, and Legal Research.
+- **AI-Ready Systems:** Contact forms designed for seamless integration with AI-powered briefing summaries (integrated backend pending).
+- **SEO Optimized:** Comprehensive technical SEO including canonical URLs, unique meta-tagging for each view, and a structured sitemap.
 
-**Prerequisites:**  Node.js
+## Setup Instructions
 
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+1. Clone the repository
+2. Navigate to the project root
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+Start the local development server:
+   ```bash
+   npm run dev
+   ```
+
+### Production Build
+Generate a production-ready bundle:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+This application is optimized for deployment on **Vercel** or any modern cloud platform supporting static site hosting with Vite.
+
+---
+© 2026 Silungwe Law Consultants. All Rights Reserved.

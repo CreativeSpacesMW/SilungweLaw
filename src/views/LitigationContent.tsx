@@ -1,8 +1,16 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Scale, ShieldAlert, Gavel } from 'lucide-react';
 
 const Litigation: React.FC = () => {
+  useEffect(() => {
+    document.title = "Strategic Impact & Case Scenarios | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Review the strategic impact of Silungwe Law Consultants through expert consultancy scenarios and commercial dispute resolution impact studies.');
+    }
+  }, []);
+
   const cases = [
     {
       category: "Corporate Governance",

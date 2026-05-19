@@ -1,8 +1,16 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Globe, Heart, BookOpen, Leaf } from 'lucide-react';
 
 const GlobalCSR: React.FC = () => {
+  useEffect(() => {
+    document.title = "Global Advisory & Social Responsibility | Silungwe Law Consultants";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Silungwe Law Consultants bridges Malawian enterprises with regional financial hubs while maintaining a strong commitment to social and community responsibility.');
+    }
+  }, []);
+
   return (
     <div className="bg-white pt-24">
       {/* Global Vision */}
@@ -38,7 +46,7 @@ const GlobalCSR: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative">
                 <div className="absolute -inset-4 bg-slc-gold/20 rounded-full blur-3xl"></div>
-                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&q=80&w=800" className="relative z-10 rounded-lg shadow-2xl opacity-80 backdrop-blur-sm grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Global Network" />
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&q=80&w=800" className="relative z-10 rounded-lg shadow-2xl opacity-80 backdrop-blur-sm grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Silungwe Law Consultants - Global Network and International Advisory Gateway" />
               </div>
             </div>
           </div>
